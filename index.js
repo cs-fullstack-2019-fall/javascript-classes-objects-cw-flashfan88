@@ -5,26 +5,26 @@
 // Create an object of the class and use the function.
 
 
-// class GitHubRepository {
-//     constructor(userName, fileName, descriptionofRepository, code) {
-//         this.userp = userName;
-//         this.filenamep = fileName;
-//         this.descriptionp = descriptionofRepository;
-//         this.codep = code;
-//     }
-//
-//     printProps()
-//     {
-//         console.log(this.userp);
-//         console.log(this.filenamep);
-//         console.log(this.descriptionp);
-//         console.log(this.codep);
-//     }
-//
-// }
-//
-// let myRepository = new myRepository("flashfan", "blah", "largerepository", "fifteen");
-// myRepository.printProps();
+class GitHubRepository {
+    constructor(userName, fileName, descriptionofRepository, code) {
+        this.userp = userName;
+        this.filenamep = fileName;
+        this.descriptionp = descriptionofRepository;
+        this.codep = code;
+    }
+
+    printProps()
+    {
+        console.log(this.userp);
+        console.log(this.filenamep);
+        console.log(this.descriptionp);
+        console.log(this.codep);
+    }
+
+}
+
+let myRepository = new myRepository("flashfan", "blah", "largerepository", "fifteen");
+myRepository.printProps();
 
 //Problem 2:
 //Create a Movie class with the following properties: movieName, rating, and yearReleased.
@@ -40,6 +40,7 @@ constructor(movieName, rating, yearRelease)
     this.released = yearRelease;
 }
 }
+// Not sure what you are trying to do here but this syntax is not right
 var movieEdits =
     {
         Movie: "Avengers",
@@ -51,5 +52,6 @@ var movieEdits =
         }
 
 };
+// you cannot name an instance the same as the class name and instances should be lowecase (ex myInstance = new MyClass(value,value,value))
 let Movies = new Movies()
 movieEdits.printProps();
